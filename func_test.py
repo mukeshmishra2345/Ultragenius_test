@@ -23,3 +23,18 @@ def test_newline_delimiter():
 # Test for custom  delimiters numbers where numbers string startswith. "//[delimiter]\n[numbers...]"
 def test_custom_delimiter():
     assert add("//;\n1;2") == 3
+
+# Test case of nagetaive numbers in numbers String as input
+def test_negative_numbers():
+    try:
+        add("1,-1,2")
+        assert False, "Expected exception for negative numbers"
+    except ValueError as e:
+        assert str(e) == "negative numbers not allowed: -1"
+
+def test_multiple_negative_numbers():
+    try:
+        add("1,-1,2,-3")
+        assert False, "Expected exception for negative numbers"
+    except ValueError as e:
+        assert str(e) == "negative numbers not allowed: -1,-3"

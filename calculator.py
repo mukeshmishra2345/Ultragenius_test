@@ -12,4 +12,8 @@ def add(numbers: str) -> int:
     number_list = numbers.split(",")
     number_list = [int(num) for num in number_list if num]
 
+    negatives = [n for n in number_list if n < 0]
+    if negatives:
+        raise ValueError(f"negative numbers not allowed: {','.join(map(str, negatives))}")
+
     return sum(number_list)
