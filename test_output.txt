@@ -2,10 +2,15 @@
 platform darwin -- Python 3.7.2, pytest-7.4.4, pluggy-1.2.0 -- /Users/mukeshmishra/My_Pro/ultragenius/Ugenv/bin/python
 cachedir: .pytest_cache
 rootdir: /Users/mukeshmishra/My_Pro/ultragenius
-collecting ... collected 3 items
+collecting ... collected 8 items
 
-func_test.py::test_empty_string_returns_zero PASSED                      [ 33%]
-func_test.py::test_single_number PASSED                                  [ 66%]
-func_test.py::test_two_numbers PASSED                                    [100%]
+func_test.py::test_empty_string_returns_zero PASSED                      [ 12%]
+func_test.py::test_single_number PASSED                                  [ 25%]
+func_test.py::test_two_numbers PASSED                                    [ 37%]
+func_test.py::test_multiple_numbers PASSED                               [ 50%]
+func_test.py::test_newline_delimiter PASSED                              [ 62%]
+func_test.py::test_custom_delimiter PASSED                               [ 75%]
+func_test.py::test_negative_numbers PASSED                               [ 87%]
+func_test.py::test_multiple_negative_numbers PASSED                      [100%]
 
-============================== 3 passed in 0.00s ===============================
+============================== 8 passed in 0.01s ===============================
