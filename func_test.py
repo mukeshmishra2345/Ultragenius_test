@@ -15,7 +15,11 @@ def test_two_numbers():
 # Test for multiple comma separated numbers
 def test_multiple_numbers():
     assert add("1,2,3,4") == 10
-    
+
 # Test for newlines between numbers. "1\n2,3"
 def test_newline_delimiter():
     assert add("1\n2,3") == 6    
+
+# Test for custom  delimiters numbers where numbers string startswith. "//[delimiter]\n[numbers...]"
+def test_custom_delimiter():
+    assert add("//;\n1;2") == 3
